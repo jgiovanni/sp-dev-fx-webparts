@@ -10,6 +10,6 @@
     "vue": "node_modules/vue/dist/vue.runtime.js"
   },
   "localizedResources": {
-    "toDoStrings": "webparts/stageMap/loc/{locale}.js"
+    "stageMapStrings": "webparts/stageMap/loc/{locale}.js"
   }
 }

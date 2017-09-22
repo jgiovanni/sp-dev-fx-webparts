@@ -6,16 +6,16 @@ import {
 } from '@microsoft/sp-webpart-base';
 import {escape} from '@microsoft/sp-lodash-subset';
 
-const fabric = require('office-ui-fabric-js/dist/js/fabric.min.js')
+const fabric = require('office-ui-fabric-js/dist/js/fabric.min.js');
 require('image-map-resizer');
+
 // Import Vue + Libraries
 import * as Vue from 'vue';
-// Import Vue Components
-import homeComponent from './components/home.vue';
+import home from './components/home.vue';
 
 //
 import {IStageMapWebPartProps} from './IStageMapWebPartProps';
-// import * as strings from 'stageMapStrings';
+import * as strings from 'stageMapStrings';
 
 export default class StageMapWebPart extends BaseClientSideWebPart<IStageMapWebPartProps> {
 
@@ -28,9 +28,9 @@ export default class StageMapWebPart extends BaseClientSideWebPart<IStageMapWebP
             route: this.properties.route,
         };
 
-        new Vue({
+        (<any>window).app = new Vue({
             el: `#app-${this.context.instanceId}`,
-            render: h => h(homeComponent, {
+            render: h => h(home, {
                 props: this.data,
             })
         });
@@ -39,6 +39,7 @@ export default class StageMapWebPart extends BaseClientSideWebPart<IStageMapWebP
     public onBeforeSerialize(): any {
         this.properties.route = this.data.route;
         (<any>window).fabric = fabric;
+
         return undefined;
     }
 
@@ -51,14 +52,14 @@ export default class StageMapWebPart extends BaseClientSideWebPart<IStageMapWebP
             pages: [
                 {
                     header: {
-                        description: 'OrangeGate Stage Map'
+                        description: strings.PropertyPaneDescription
                     },
                     groups: [
                         {
-                            groupName: 'OrangeGate',
+                            groupName: strings.BasicGroupName,
                             groupFields: [
                                 PropertyPaneTextField('message', {
-                                    label: 'Stage Map'
+                                    label: strings.DescriptionFieldLabel
                                 })
                             ]
                         }

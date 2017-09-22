@@ -8,25 +8,27 @@
   "dependencies": {
     "@microsoft/sp-core-library": "~1.1.0",
     "@microsoft/sp-webpart-base": "~1.1.1",
-    "@types/webpack-env": ">=1.12.1 <1.14.0",
+    "@types/webpack-env": "^1.13.1",
     "flexboxgrid": "^6.3.1",
+    "image-map-resizer": "^1.0.3",
     "office-ui-fabric-js": "^1.4.0",
-    "vue": "^2.3.4",
-    "vue-class-component": "^5.0.1",
-    "vue-property-decorator": "^5.1.0",
-    "vue-template-compiler": "^2.3.4"
+    "vue": "^2.4.4",
+    "vue-class-component": "^5.0.2",
+    "vue-property-decorator": "^5.3.0",
+    "vue-template-compiler": "^2.4.4"
   },
   "devDependencies": {
     "@microsoft/sp-build-web": "~1.1.0",
-    "@microsoft/sp-module-interfaces": "~1.1.0",
+    "@microsoft/sp-module-interfaces": "^1.1.1",
     "@microsoft/sp-webpart-workbench": "~1.1.0",
     "@types/chai": ">=3.4.34 <3.6.0",
-    "@types/mocha": ">=2.2.33 <2.6.0",
-    "css-loader": "^0.28.4",
+    "@types/mocha": "^2.2.43",
+    "css-loader": "^0.28.7",
+    "exports-loader": "^0.6.4",
     "gulp": "~3.9.1",
     "node-sass": "^4.5.3",
-    "sass-loader": "^6.0.5",
-    "vue-loader": "^12.2.1",
+    "sass-loader": "^6.0.6",
+    "vue-loader": "^12.2.2",
     "webpack-merge": "^4.1.0"
   },
   "scripts": {

@@ -15,15 +15,22 @@ img.panel-title {
   padding: 40px 0 0 0;
 }
 
-.base {
+.app-base {
   background-color: #e0e0e0;
   padding: 0;
   margin: 0;
   position: relative;
+  height: 100%;
 }
+
+.utility-bar {
+  position: absolute;
+  z-index: 10;
+}
+
 .title-img {
   margin: auto;
-  padding-top: 100px;
+  padding-top: 50px;
 
 }
 
@@ -39,7 +46,6 @@ img.panel-title {
 .ms-Panel {
   background-color: rgba(57, 48, 145, 1);
 }
-
 
 // Component Transitions
 .fade-inter-active, .fade-leave-active {
