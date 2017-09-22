@@ -2,7 +2,7 @@
 
 const gulp = require('gulp');
 const build = require('@microsoft/sp-build-web');
-var merge = require('webpack-merge');
+let merge = require('webpack-merge');
 
 build.sass.setConfig({
     sassMatch: []
@@ -10,9 +10,10 @@ build.sass.setConfig({
 
 build.configureWebpack.setConfig({
     additionalConfiguration: function (config) {
-        var vueConfig = {
+        let vueConfig = {
             module: {
                 rules: [
+                    { test: /fabric(\.min)?\.js$/, use: 'exports-loader?fabric' },
                     {
                         test: /\.vue$/,
                         use: [

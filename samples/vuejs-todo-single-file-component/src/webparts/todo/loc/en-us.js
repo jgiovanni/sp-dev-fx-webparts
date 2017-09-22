@@ -1,6 +1,6 @@
 define([], function() {
   return {
-    "PropertyPaneDescription": "Todo web part settings",
+    "PropertyPaneDescription": "OrangeGate Stage Map",
     "BasicGroupName": "Title",
     "DescriptionFieldLabel": "Change the title"
   }

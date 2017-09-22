@@ -1,6 +1,6 @@
 {
   "workingDir": "./temp/deploy/",
   "account": "<!-- STORAGE ACCOUNT NAME -->",
-  "container": "vue-todo",
+  "container": "stage-map",
   "accessKey": "<!-- ACCESS KEY -->"
 }

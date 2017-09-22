@@ -1,0 +1,46 @@
+@import "~flexboxgrid";
+@import "~office-ui-fabric-js/dist/css/fabric.min.css";
+@import "~office-ui-fabric-js/dist/css/fabric.components.css";
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+img.panel-title {
+  padding: 40px 0 0 0;
+}
+
+.base {
+  background-color: #e0e0e0;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+.title-img {
+  margin: auto;
+  padding-top: 100px;
+
+}
+
+// Map Styles
+.stage-indicator {
+  position: absolute;
+  z-index: 2;
+}
+
+.key-step {
+
+}
+.ms-Panel {
+  background-color: rgba(57, 48, 145, 1);
+}
+
+
+// Component Transitions
+.fade-inter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
