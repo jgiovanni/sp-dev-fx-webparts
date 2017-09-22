@@ -2,13 +2,13 @@
     <div class="base">
         <div class="row">
             <div class="col-xs-12">
-                <transition name="fade">
+                <!--<transition name="fade">-->
                     <keep-alive>
                         <component :is="currentView" @to-page="changeView">
                             <!-- inactive components will be cached! -->
                         </component>
                     </keep-alive>
-                </transition>
+                <!--</transition>-->
             </div>
         </div>
     </div>
