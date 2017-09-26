@@ -32,7 +32,7 @@ build.configureWebpack.setConfig({
 });
 
 build.copyStaticAssets.setConfig({
-    includeExtensions: ['vue', 'scss']
+    includeExtensions: ['vue', 'scss', 'png', 'jpg']
 });
 
 build.initialize(gulp);

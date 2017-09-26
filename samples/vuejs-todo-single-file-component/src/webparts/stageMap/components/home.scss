@@ -1,6 +1,8 @@
 @import "~flexboxgrid";
 @import "~office-ui-fabric-js/dist/css/fabric.min.css";
 @import "~office-ui-fabric-js/dist/css/fabric.components.css";
+@import "~animate.css";
+@import "~vue2-animate/dist/vue2-animate.min.css";
 
 a {
   cursor: pointer;
@@ -35,6 +37,12 @@ img.panel-title {
 }
 
 // Map Styles
+.map-container {
+  position: relative;
+}
+.fade-enter-active .map-container, .fade-leave-active .map-container {
+  //position: initial;
+}
 .stage-indicator {
   position: absolute;
   z-index: 2;
@@ -43,14 +51,44 @@ img.panel-title {
 .key-step {
 
 }
+
 .ms-Panel {
   background-color: rgba(57, 48, 145, 1);
 }
 
+.panel-content > .img {
+  padding: 20px 0;
+}
+
 // Component Transitions
-.fade-inter-active, .fade-leave-active {
+.fade-enter-active, .fade-leave-active {
   transition: opacity .5s;
 }
+
 .fade-enter, .fade-leave-to {
+  position: absolute;
   opacity: 0;
+  z-index: 1;
 }
+
+.rotate-in-left-active, .rotate-in-left-leave {
+  -moz-perspective: 1300px;
+  -webkit-perspective: 1300px;
+  perspective: 1300px
+}
+
+.rotate-in-left-enter {
+  -webkit-transform: translateZ(100px) translateX(-100%) rotateY(90deg);
+  transform: translateZ(100px) translateX(-100%) rotateY(90deg)
+}
+
+.rotate-in-left-leave-to {
+  -webkit-transform: translateZ(0) translateX(0) rotateY(0);
+  transform: translateZ(0) translateX(0) rotateY(0)
+}
+
+
+
+
+
+

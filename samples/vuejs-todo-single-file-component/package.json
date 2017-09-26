@@ -9,13 +9,16 @@
     "@microsoft/sp-core-library": "~1.1.0",
     "@microsoft/sp-webpart-base": "~1.1.1",
     "@types/webpack-env": "^1.13.1",
+    "animate.css": "^3.5.2",
     "flexboxgrid": "^6.3.1",
     "image-map-resizer": "^1.0.3",
     "office-ui-fabric-js": "^1.4.0",
+    "uglify-es": "git+https://github.com/mishoo/UglifyJS2.git#harmony",
     "vue": "^2.4.4",
     "vue-class-component": "^5.0.2",
     "vue-property-decorator": "^5.3.0",
-    "vue-template-compiler": "^2.4.4"
+    "vue-template-compiler": "^2.4.4",
+    "vue2-animate": "^1.0.4"
   },
   "devDependencies": {
     "@microsoft/sp-build-web": "~1.1.0",

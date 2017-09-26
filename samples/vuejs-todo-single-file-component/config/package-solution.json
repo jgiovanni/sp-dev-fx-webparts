@@ -1,22 +1,8 @@
 {
   "solution": {
     "name": "stage-map",
-    "id": "93e1bc8f-a063-4617-aa40-837e3b39f958",
-    "version": "1.0.0.0",
-    "features": [{
-      "title": "stage-map-client-side-solution",
-      "description": "stage-map-client-side-solution",
-      "id": "523fe887-ced5-4036-b564-8dad5c6c6e24",
-      "version": "1.0.0.0",
-      "assets": {
-        "elementManifests": [
-          "elements.xml"
-        ]/*,
-        "elementFiles":[
-          "schema.xml"
-        ]*/
-      }
-    }]
+    "id": "a0e1eddd-ea67-4775-a52b-0141c5807146",
+    "version": "1.0.0.0"
   },
   "paths": {
     "zippedPackage": "solution/stage-map.sppkg"
